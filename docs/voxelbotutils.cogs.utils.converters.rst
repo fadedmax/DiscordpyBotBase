@@ -1,39 +1,39 @@
 Converters
 ===========================================
 
-voxelbotutils.converters.BooleanConverter
+converters.BooleanConverter
 -------------------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.boolean_converter.BooleanConverter
+.. autoclass:: voxelbotutils.converters.BooleanConverter
 
-voxelbotutils.converters.UserID
+converters.UserID
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.user_id.UserID
+.. autoclass:: voxelbotutils.converters.UserID
 
-voxelbotutils.converters.ChannelID
+converters.ChannelID
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.channel_id.ChannelID
+.. autoclass:: voxelbotutils.converters.ChannelID
 
-voxelbotutils.converters.EnumConverter
+converters.EnumConverter
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.enum_converter.EnumConverter
+.. autoclass:: voxelbotutils.converters.EnumConverter
 
-voxelbotutils.converters.ColourConverter
+converters.ColourConverter
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.colour_converter.ColourConverter
+.. autoclass:: voxelbotutils.converters.ColourConverter
 
     It's just a normal colour converter that has the list of Wikipedia colour names as valid responses.
 
-voxelbotutils.converters.FilteredUser
+converters.FilteredUser
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.filtered_user.FilteredUser
+.. autoclass:: voxelbotutils.converters.FilteredUser
 
-voxelbotutils.converters.FilteredMember
+converters.FilteredMember
 ---------------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.converters.filtered_user.FilteredMember
+.. autoclass:: voxelbotutils.converters.FilteredMember

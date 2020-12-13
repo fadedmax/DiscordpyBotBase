@@ -1,14 +1,14 @@
 Utils
 ================================
 
-voxelbotutils.ContextEmbed
+Embed
 ----------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.context_embed.ContextEmbed
+.. autoclass:: voxelbotutils.Embed
    :members:
 
    .. note::
-      All of the methods and attributes available in `discord.Embed` still work as they did before; nothing has had any breaking changes.
+      All of the methods and attributes available in :ref:`discord.Embed` still work as they did before; nothing has had any breaking changes.
 
    .. code-block:: python
 
@@ -30,39 +30,41 @@ voxelbotutils.ContextEmbed
       # And of course you still send it as it was
       await channel.send(embed=e)
 
-voxelbotutils.Bot
+Bot
 -------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.custom_bot.CustomBot
-   :members: set_default_presence, reload_config, load_all_extensions, get_uptime, get_invite_link, get_extensions, add_delete_button
+.. autoclass:: voxelbotutils.Bot
+   :members:
+   :no-inherited-members:
+   :no-members: close, invoke, login, start
 
-voxelbotutils.Cog
+Cog
 -------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.custom_cog.CustomCog
+.. autoclass:: voxelbotutils.Cog
    :members:
 
    Almost everything is still the same as the defaul discord.py cog. Notable changes: `Cog.logger` is a thing - that's a deafult logger that follows the same loglevel as `Bot.logger`; `Cog.cache_setup` is a new awaitable method that's run at bot startup - use it to set up your cache values should you need them, but otherwise you should just pull from your database tbh.
 
-voxelbotutils.Command
+Command
 -----------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.custom_command.CustomCommand
+.. autoclass:: voxelbotutils.Command
    :members:
 
-.. autoclass:: voxelbotutils.cogs.utils.custom_command.CustomGroup
+.. autoclass:: voxelbotutils.Group
    :members:
 
 voxelbotutils.Context
 -----------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.custom_context.CustomContext
+.. autoclass:: voxelbotutils.Context
    :members:
 
-voxelbotutils.DatabaseConnection
+DatabaseConnection
 ----------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.database.DatabaseConnection
+.. autoclass:: voxelbotutils.DatabaseConnection
    :members:
 
    .. note::
@@ -81,25 +83,25 @@ voxelbotutils.DatabaseConnection
       await db("DELETE FROM user_settings")
       await db.disconnect()
 
-voxelbotutils.RedisConnection
+RedisConnection
 -------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.redis.RedisConnection
+.. autoclass:: voxelbotutils.RedisConnection
    :members:
 
    .. note::
       This is only enabled if redis is enabled in the config.
 
-voxelbotutils.StatsdConnection
+StatsdConnection
 -------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.statsd.StatsdConnection
+.. autoclass:: voxelbotutils.StatsdConnection
    :members:
 
-voxelbotutils.TimeValue
+TimeValue
 -------------------------------------------
 
-.. autoclass:: voxelbotutils.cogs.utils.time_value.TimeValue
+.. autoclass:: voxelbotutils.TimeValue
    :members:
 
    .. note::
